@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RickandMortyAPI</title>
+    <!-- Include the CSS file -->
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- The navigation bar (including a favourites button) -->
+    <section class="Topbar">
+        <img src="https://cms.rhinoshield.app/public/images/small_ip_page_rick_and_morty_icon_a4dd0e2f8f.webp" alt="Logo">
+        <button id="Favourites">Favourites</button>
+    </section>
+
+    <!-- The banner of the website -->
+    <section class="Intro">
+        <img src="https://cms.rhinoshield.app/public/images/ip_page_rick_and_morty_banner_28b2079b2d.webp" alt="Cover">
+    </section>
+
+    <!-- The search bar and page navigation buttons -->
+    <section class="Search">
+        <input type="text" id="Search" placeholder="Search for a character ...">
+        <button id="previousPage"> Previous </button>
+        <p id="showCurrentpage"> 1 </p>
+        <button id="nextPage"> Next </button>
+    </section>
+
+    <!-- The sort and filtering of the character cards -->
+    <section class="SortingFiltering">
+        <!-- Sorting the character cards -->
+        <p>Sort: </p>
+        <select id="Sorting">
+            <option value="Ascending">Ascending</option>
+            <option value="Descending">Descending</option>
+            <option selected value="Default">Default</option>
+        </select>   
+        <!-- Showing characters depending on the status -->
+        <p>Status: </p>
+        <select id="statusFilter">
+            <option value="">All Statuses</option>
+            <option value="Alive">Alive</option>
+            <option value="Dead">Dead</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <!--Showing characters depending on the gender -->
+        <p>Gender: </p>
+        <select id="genderFilter">
+            <option value="">All Genders</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <!-- Showing characters depending on the species -->
+        <p>Species: </p>
+        <select id="speciesFilter">
+            <option value="">All Species</option>
+            <option value="Human">Human</option>
+            <option value="Alien">Alien</option>
+            <option value="Humanoid">Humanoid</option>
+            <option value="Poopybutthole">Poopybutthole</option>
+            <option value="Mythological Creature">Mythological Creature</option>
+            <option value="Robot">Robot</option>
+            <option value="Animal">Animal</option>
+            <option value="Disease">Disease</option>
+            <option value="Cronenberg">Cronenberg</option>
+            <option value="Planet">Planet</option>
+            <option value="unknown">Unknown</option>
+        </select>
+    </section>
+    
+    <!-- Including the JavaScript file -->
+    <script src="/src/main.js"></script>
+
+    <p class="Void"> </p>
+</body>
+</html>
