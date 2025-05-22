@@ -8,12 +8,12 @@ Screenshots van de webapplicatie:
 
 Handleiding:
 Open Windows PowerShell op uw pc/laptop en voer de onderstaande code in:
------
+
 git clone https://github.com/F0RD-P1N3S15/RickandMorty-App
 cd RickandMorty-App
 npm install
 npm run dev
------
+
 Ctrl + Klik op de link naast 'Local:'
 
 Functionele vereisten:
@@ -60,7 +60,7 @@ Functionele vereisten:
  - 1:
    
 const RickandMortyAPI = "https://rickandmortyapi.com/api/character"; const getCharacters = async () => { let res = await fetch(RickandMortyAPI); let data = await res.json(); return data.results; } let Card = document.createElement('div') Card.classList.add('main') function showCharacters(Characters) { Card.innerHTML = Characters.map(character => { return( <div class="Card"> <p>${character.name} - ${character.status} </p> <img src="${character.image}" alt="${character.name}" /> <div class="cardInfo"> <p>Gender: ${character.gender}</p> <p>Species: ${character.species}</p> <p>Origin: ${character.origin.name}</p> <p>Location: ${character.location.name}</p> </div> </div> ) }).join(''); document.body.append(Card); } showCharacters(character);
------
+
 ❗ Problem:
 javascript
 KopiërenBewerken
@@ -77,7 +77,7 @@ getCharacters().then(showCharacters);
  - 2:
 
 how would you add the possibility of favourites to a api using localstorage and functions?
------
+
 🧠 Assumptions
 You're using:
 •	Frontend only (e.g., with HTML/JavaScript)
@@ -303,7 +303,7 @@ function UpdateShowcurrentPage()
     showCurrentpage.textContent = `${currentPage}`;
 }
 getCharacters(currentPage).then(showCharacters);
------
+
 ______________________________________________________________________________________
 The reason your search does not fetch characters from all pages is because your current code only loads the characters from a single page (the current page) into allCharacters. When the user types in the search input, you're only filtering this one-page subset, not the entire dataset.
 ________________________________________
