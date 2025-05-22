@@ -6,6 +6,15 @@ Screenshots van de webapplicatie:
 ![Favourites](https://imgur.com/abhj5kF)
 ![Character Cards](https://imgur.com/x09DlPT)
 
+Handleiding:
+Open Windows PowerShell op uw pc/laptop en voer de onderstaande code in:
+-----
+git clone https://github.com/F0RD-P1N3S15/RickandMorty-App
+cd RickandMorty-App
+npm install
+npm run dev
+-----
+Ctrl + Klik op de link naast 'Local:'
 
 Functionele vereisten:
 - DOM manipulatie:
